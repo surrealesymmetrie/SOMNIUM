@@ -1,2 +1,189 @@
-# SOMNIUM
-Hörbuch Stream
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Somnium Storyversum</title>
+
+<!-- Schriftarten – bitte später durch echte Dateien ersetzen -->
+<link href="Foglihten.css" rel="stylesheet">
+<link href="FoglihtenNo07.css" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        background-image: url('AZSZ_NOG2.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        color: white;
+        font-family: Foglihten, serif;
+        text-align: center;
+    }
+
+    h1, h2, h3 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .title-block {
+        padding: 80px 20px 40px 20px;
+    }
+
+    .title-block h1 {
+        font-size: 2rem;
+        font-weight: normal;
+    }
+
+    .somnium {
+        font-family: FoglihtenNo07, serif;
+        font-size: 4rem;
+        margin: 10px 0;
+    }
+
+    .subtitle {
+        font-size: 1.3rem;
+        margin-top: 10px;
+        font-style: italic;
+    }
+
+    .storyversum {
+        font-family: FoglihtenNo07, serif;
+        font-size: 1.4rem;
+        margin-top: 10px;
+    }
+
+    .section-text {
+        margin: 40px auto;
+        max-width: 800px;
+        line-height: 1.6;
+        font-size: 1.1rem;
+    }
+
+    .divider {
+        width: 100%;
+        margin: 60px 0 40px 0;
+        text-align: center;
+        position: relative;
+    }
+
+    .divider span {
+        background: black;
+        padding: 0 15px;
+        font-family: FoglihtenNo07, serif;
+        font-size: 1.4rem;
+        position: relative;
+        z-index: 2;
+    }
+
+    .divider:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        right: 10%;
+        height: 1px;
+        background: white;
+        z-index: 1;
+    }
+
+    .banner {
+        width: 80%;
+        max-width: 700px;
+        margin: 0 auto 20px auto;
+        display: block;
+    }
+
+    .small-cover {
+        width: 200px;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .links a {
+        color: #7fc7ff;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 1.2rem;
+        margin: 0 10px;
+    }
+
+    .release-note {
+        margin-top: 20px;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+</style>
+</head>
+
+<body>
+
+<!-- TITELBLOCK -->
+<div class="title-block">
+    <h1>Herzlich willkommen in</h1>
+    <div class="somnium">somnium</div>
+    <div class="subtitle">»Alles zu seiner Zeit – nichts ohne Grund!«</div>
+    <div class="storyversum">Hier erscheinen nach und nach alle Sequels und Prequels zum<br>somnium storyversum</div>
+</div>
+
+<!-- TEXTBLOCK KRÄHENSCHWARM -->
+<div class="section-text">
+    Wir brauchen noch Verstärkung im Krähenschwarm!<br><br>
+    Bewirb dich, um alle bisherigen / zukünftigen SOMNIUM-Bücher gratis (vor Release) als eBook zu erhalten und zu rezensieren.<br><br>
+    Voraussetzungen:<br>
+    – Mitgliedschaft im Discord Server<br>
+    – Du bist Blogger*in bei TikTok / Insta und möchtest das SOMNIUM-Storyversum unterstützen.<br><br>
+    Kontaktiere mich sehr gern per DM bei TikTok oder über die Mailadresse<br>
+    <b>kraehenbriefkasten@gmail.com</b>
+</div>
+
+<!-- BUCH I -->
+<div class="divider"><span>Buch I</span></div>
+
+<img src="SID_dvs_cover.png" alt="Buch I Cover" class="banner">
+
+<div class="section-text">
+    Erhältlich als  
+    <span class="links">
+        <a href="LINK_ZU_AMAZON_PRINT">[Print]</a>
+        <a href="LINK_ZU_AMAZON_EBOOK">[eBook]</a>
+    </span>
+    bei Amazon / Kindle Unlimited
+</div>
+
+<a href="LINK_ZU_SEITE_BUCH_I">
+    <img src="SIS_zeuu_cover.png" alt="Sequel Cover" class="small-cover">
+</a>
+
+<div class="section-text">
+    sequel <span style="font-family:FoglihtenNo07;">(FoglihtenNo07)</span><br>
+    Eine kleine Einführung in das SOMNIUM-Storyversum
+</div>
+
+<!-- BUCH II -->
+<div class="divider"><span>Buch II</span></div>
+
+<img src="SIIN_kae_cover.png" alt="Buch II Cover" class="banner">
+
+<div class="section-text">
+    Feier am 5.5. Releaseday mit mir und dem Krähenschwarm!<br><br>
+    <b>[Support-Material]</b><br><br>
+    Hier entstehen gerade zwei Kurzgeschichten!
+</div>
+
+<!-- BUCH III -->
+<div class="divider"><span>Buch III</span></div>
+
+<div class="release-note">RELEASE 7.7.26</div>
+
+<div style="height: 40px;"></div>
+
+<div class="section-text">
+    Auf TikTok poste ich Updates – folge mir, um nichts zu verpassen!
+</div>
+
+</body>
+</html>
