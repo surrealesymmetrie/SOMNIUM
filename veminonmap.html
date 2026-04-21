@@ -1,0 +1,38 @@
+<div class="map-container">
+    <img src="VeminonMap.png" alt="Karte von Veminon" class="map-image" />
+</div>
+
+<style>
+/* --- Desktop-Ansicht (Standard) --- */
+.map-container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.map-image {
+    width: 90%;        /* leicht verkleinert, damit es schön wirkt */
+    height: auto;
+    max-width: 1200px; /* optional */
+    transition: transform 0.3s ease;
+}
+
+/* --- Mobile-Ansicht: Bild drehen & bildschirmfüllend anzeigen --- */
+@media (max-width: 768px) {
+    .map-image {
+        width: 100vh;          /* Höhe des Bildschirms als Breite nutzen */
+        height: auto;
+        transform: rotate(90deg);
+        transform-origin: center center;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .map-container {
+        overflow: hidden;      /* verhindert Scrollbalken durch die Drehung */
+        height: 100vh;         /* volle Bildschirmhöhe */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+</style>
