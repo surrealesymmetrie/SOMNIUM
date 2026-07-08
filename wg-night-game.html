@@ -43,3 +43,53 @@ h1 {
 ">
   ➜ Zur PDF
 </a>
+<div id="card-container" style="text-align:center; margin-top:40px;">
+    <img id="card-image" src="Deckblatt.jpg" alt="Kartendeck" style="width:300px; height:auto; cursor:pointer;">
+</div>
+
+<script>
+// --- Kartenliste erzeugen ---
+let cards = [];
+for (let i = 1; i <= 56; i++) {
+    cards.push(i + ".jpg");
+}
+
+// --- gemischtes Deck (wird bei jedem Durchlauf neu erstellt) ---
+let shuffledDeck = [];
+let currentIndex = 0;
+
+// --- Fisher-Yates Shuffle ---
+function shuffleCards() {
+    shuffledDeck = [...cards];
+    for (let i = shuffledDeck.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffledDeck[i], shuffledDeck[j]] = [shuffledDeck[j], shuffledDeck[i]];
+    }
+    currentIndex = 0;
+}
+
+// --- Start: Deckblatt anzeigen ---
+const cardImage = document.getElementById("card-image");
+cardImage.src = "Deckblatt.jpg";
+
+// --- Klick-Event ---
+cardImage.addEventListener("click", function() {
+
+    // Wenn wir gerade das Deckblatt sehen → neues Deck mischen
+    if (cardImage.src.includes("Deckblatt.jpg")) {
+        shuffleCards();
+        cardImage.src = shuffledDeck[currentIndex];
+        currentIndex++;
+        return;
+    }
+
+    // Wenn noch Karten übrig sind → nächste Karte zeigen
+    if (currentIndex < shuffledDeck.length) {
+        cardImage.src = shuffledDeck[currentIndex];
+        currentIndex++;
+    } else {
+        // Alle Karten wurden gezeigt → zurück zum Deckblatt
+        cardImage.src = "Deckblatt.jpg";
+    }
+});
+</script>
